@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>KrowdByz Interview -- Renjie Weng</title>
+</head>
+<body>
+
+	<center>
+		<table width="500" height="100">
+			<tr>
+				<td width="100">
+					<label id="player1" style="color:rgb(255,0,0); font-size:120%;">&nbsp;</label>
+				</td>
+				<td width="300">
+					<label id="turn" style="font-size:150%; font-style:bold; text-align: center; display: block;"></label>
+				</td>
+				<td width="100">
+					<label id="player2" style="color:rgb(0,255,0); font-size:120%; text-align: right; display: block;">&nbsp;</label>
+				</td>
+			</tr>
+		</table>
+	
+		<div>
+			<canvas id="canvas" width="600" height="600" onClick="newClick()"></canvas>
+		</div>
+	
+	<div>
+		<table>
+			<tr>
+				<td>
+					player1: <input type="text" id="name1" value=""/>
+				</td>
+				<td rowspan="2">
+					<input type="button" id="start" value="Start!" onclick="start();" style="width: 150px; height:50px" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					player1: <input type="text" id="name2" value=""/>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	</center>
+	
+        <script src="./CheckerBoard.js">
+        </script>
+</body>
+</html>
