@@ -1,20 +1,15 @@
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-
 import org.apache.crimson.tree.TextNode;
 import org.apache.crimson.tree.XmlDocument;
 import org.w3c.dom.Comment;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import org.w3c.dom.Text;
-import org.w3c.dom.html.HTMLElement;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -125,11 +120,13 @@ private Document document;
 		
 		// canvas
 		Element div = document.createElement("div");
+		div.setAttribute("style", "position: relative;");
 		attr = new HashMap<String,String>();
 		attr.put("id", "canvas");
 		attr.put("width", "600");
 		attr.put("height", "600");
 		attr.put("onClick", "newClick()");
+		attr.put("style", "position: relative;");
 		Node canvas = createBasicNode("canvas", attr, "");
 		div.appendChild(canvas);
 		
@@ -156,7 +153,7 @@ private Document document;
 		attr.put("type", "button");
 		attr.put("id", "start");
 		attr.put("value", "Start!");
-		attr.put("onclick", "start();");
+		attr.put("onclick", "StartGame();");
 		attr.put("style", "width: 150px; height:50px");
 		Node start = createBasicNode("input", attr, "");
 		td2.appendChild(start);
@@ -249,7 +246,7 @@ private Document document;
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		CheckerBoard c = new CheckerBoard("./checkerBoard_sample.html");
+		CheckerBoard c = new CheckerBoard("./CheckerBoard.html");
 	}
 
 }
