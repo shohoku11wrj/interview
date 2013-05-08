@@ -1,5 +1,6 @@
 /*
  * Whether a SingleList has a loop or not?
+ * Refer: http://ostermiller.org/find_loop_singly_linked_list.html
  */
 #include <iostream>
 
