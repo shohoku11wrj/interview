@@ -1,7 +1,9 @@
 1. detect cicle in linkedList
 2. find the first unrepeating char in string, O(n + a little) with hashtable 
-3. find the common characters in two strings
-4. insert new element in the beginning of an array (C++/Java)
+---- on site ---
+3. find the common characters in two strings (C++/Java)
+4. insert new element in the beginning of an array (C++/Java), O(1) ??
+5. fulfill queue with 2 stacks (C++)
 
 Job Description:
 About Bomoda:
