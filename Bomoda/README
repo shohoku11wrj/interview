@@ -4,6 +4,11 @@
 3. find the common characters in two strings (C++/Java)
 4. insert new element in the beginning of an array (C++/Java), O(1) ??
 5. fulfill queue with 2 stacks (C++)
+6. File get_largest_size(File f); given [ List<File> file_lists(File f) ] and
+   [ int get_size(File f) , if f = directory, return 0 ]
+7. Known one character has more than half frequencey of whole string size, find the char;
+   Time O(n), Space O(1); or Time O(nlogn), get char at n/2 position after sorted;
+8. single-linklist, find last k postion element; use 2 pointer
 
 Job Description:
 About Bomoda:
